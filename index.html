@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raw Surfaces | Commercial Concrete &amp; High-End Residential Floors &amp; Walls | Melbourne &amp; Mornington Peninsula</title>
+<meta name="description" content="Large-scale commercial concrete grinding, surface preparation and epoxy floors — plus high-end residential polished concrete, microcement and Venetian plaster floors and walls. Owner-led by Brayden Warhurst, 14+ years. Melbourne &amp; Mornington Peninsula.">
+<link rel="canonical" href="https://www.rawsurfaces.com.au/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Anton&family=Bricolage+Grotesque:wght@500;700;800&family=Space+Grotesk:wght@500;700&family=Big+Shoulders+Display:wght@600;800&family=Syne:wght@700;800&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=Hanken+Grotesk:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script>if('IntersectionObserver' in window)document.documentElement.className+=' js';</script>
+<style>
+:root{
+  --bg:#ECE3D4;--paper:#F4EEE2;--stone:#E0D5C2;--stone2:#D2C6AF;--char:#211B14;
+  --ink:#241D15;--ink2:#5E5446;--muted:#938775;--line:rgba(36,29,21,.16);--line2:rgba(36,29,21,.30);
+  --accent:#5C5E3C;/* deep olive (switchable) */
+  --display:"Archivo";--body:"Inter";--mono:"Space Mono",ui-monospace,monospace;--serif:"Fraunces",Georgia,serif;
+  --radius:13px;--r-sm:7px;--max:1480px;--pad:44px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body),-apple-system,Arial,sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.disp{font-family:var(--display),"Archivo",sans-serif}
+.it{font-family:var(--serif);font-style:italic;font-weight:500;text-transform:none}
+.m{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.frame{position:relative;overflow:hidden;background:var(--stone);border-radius:var(--radius)}
+.frame img{transition:transform 1.4s cubic-bezier(.19,.7,.2,1)}
+.arch{border-radius:520px 520px var(--radius) var(--radius)}
+@media(max-width:820px){:root{--pad:20px}}
+
+.grain{position:fixed;inset:0;z-index:5;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.rail{position:fixed;left:13px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;z-index:55;pointer-events:none;mix-blend-mode:difference;color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.32em;text-transform:uppercase}
+@media(max-width:1120px){.rail{display:none}}
+.progress{position:fixed;top:0;left:0;height:3px;background:var(--accent);z-index:65;width:0;transition:width .1s linear}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s,color .4s,border-color .4s;color:#fff;mix-blend-mode:difference;border-bottom:1px solid transparent}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:20px;padding-bottom:20px}
+.nav .brand{font-family:var(--display),sans-serif;font-weight:900;font-size:19px;letter-spacing:-.01em;text-transform:uppercase}
+.nav .links{display:flex;align-items:center;gap:28px}
+.nav .links a{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.86}
+.nav .links a:hover{opacity:1}
+.nav .enq{border:1px solid currentColor;padding:9px 18px;border-radius:var(--r-sm);opacity:1!important}
+.nav.scrolled{mix-blend-mode:normal;background:rgba(236,227,212,.9);backdrop-filter:blur(12px);color:var(--ink);border-bottom-color:var(--line)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.burger span{width:24px;height:2px;background:currentColor;display:block}
+@media(max-width:920px){
+  .nav{mix-blend-mode:normal;color:#F4EEE2}.nav.scrolled{color:var(--ink)}
+  .nav .links{position:fixed;inset:0;background:var(--bg);color:var(--ink);flex-direction:column;justify-content:center;gap:24px;transform:translateX(100%);transition:transform .4s;z-index:70}
+  .nav .links.open{transform:none}.nav .links a{font-size:15px;opacity:1}
+  .burger{display:flex;z-index:80}
+}
+
+/* HERO */
+.hero{position:relative;height:100vh;min-height:640px;overflow:hidden}
+.hero>img{position:absolute;left:0;top:-10%;height:120%;width:100%;will-change:transform;filter:brightness(.97) contrast(1.03) saturate(1.05)}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,27,20,.42),rgba(33,27,20,0) 24%,rgba(33,27,20,0) 50%,rgba(33,27,20,.68))}
+.hero .corners{position:absolute;inset:0;z-index:2;color:#F1EADC;pointer-events:none}
+.hero .tl{position:absolute;top:98px;left:var(--pad)}
+.hero .tr{position:absolute;top:98px;right:var(--pad);text-align:right}
+.hero .corners .m{color:#E4DBCB}
+.hero .inner{position:absolute;left:0;right:0;bottom:46px;z-index:2;color:#F6F0E4}
+.hero h1{font-family:var(--display),sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(56px,13vw,205px);line-height:.9;letter-spacing:-.02em}
+.hero .sub{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-top:26px}
+.hero .sub p{max-width:48ch;font-size:15.5px;color:#EAE2D3;font-weight:300}
+.hero .go{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;border:1px solid rgba(246,240,228,.5);padding:14px 24px;border-radius:var(--r-sm);transition:.25s;white-space:nowrap}
+.hero .go:hover{background:#F6F0E4;color:var(--char)}
+@media(max-width:600px){.hero .tr{display:none}}
+
+/* MARQUEE */
+.marq{overflow:hidden;white-space:nowrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
+.mrun{display:inline-flex;align-items:center;padding:16px 0;animation:scroll 48s linear infinite}
+.mrun span{font-family:var(--display),sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(26px,4.6vw,60px);line-height:1;letter-spacing:-.01em}
+.mrun i{font-style:normal;color:var(--accent);margin:0 26px;font-size:clamp(13px,1.8vw,24px)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mrun{animation:none}}
+
+/* PROOF BAR */
+.proof{border-bottom:1px solid var(--line);background:var(--paper)}
+.proof .wrap{display:flex;flex-wrap:wrap}
+.proof .pi{flex:1;min-width:190px;padding:30px 0 30px 26px;border-left:1px solid var(--line)}
+.proof .pi:first-child{border-left:0;padding-left:0}
+.proof .pn{font-family:var(--display),sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(19px,2vw,28px);letter-spacing:-.01em;line-height:1}
+.proof .pl{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:9px}
+@media(max-width:680px){.proof .pi{flex:1 1 50%;min-width:0;border-left:0;padding:22px 0}.proof .pi:nth-child(even){padding-left:20px;border-left:1px solid var(--line)}}
+
+/* SECTION */
+section{padding:128px 0;position:relative}
+.snum{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:32px;display:block}
+.h2{font-family:var(--display),sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(40px,7vw,104px);line-height:.92;letter-spacing:-.02em}
+.lead-serif{font-family:var(--display),sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(30px,4.6vw,64px);line-height:1.02;letter-spacing:-.018em;max-width:20ch}
+.intro-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:end}
+.intro-grid .body p{font-size:16px;color:var(--ink2);margin-bottom:18px;font-weight:300}
+.intro-grid .body p:last-child{margin-bottom:0}
+.arrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-top:12px}
+.arrow:hover{gap:15px}
+@media(max-width:860px){.intro-grid{grid-template-columns:1fr;gap:30px;align-items:start}}
+.shead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:58px}
+.soft{background:var(--stone)}
+
+/* DIVISIONS */
+.division{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:64px 0;border-top:1px solid var(--line2)}
+.division:first-of-type{border-top:0;padding-top:0}
+.division .frame{height:540px}
+.division.flip .dtext{order:2}
+.division .tag{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.division h3{font-family:var(--display),sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(30px,4vw,58px);line-height:.96;letter-spacing:-.02em;margin:14px 0 16px}
+.division p{font-size:16px;color:var(--ink2);font-weight:300;max-width:46ch}
+.ulist{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+.ulist li{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line2);padding:7px 12px;border-radius:var(--r-sm)}
+@media(max-width:880px){.division{grid-template-columns:1fr;gap:28px;padding:44px 0}.division.flip .dtext{order:0}.division .frame{height:360px}}
+
+/* SURFACES */
+.cat{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 28px}
+@media(max-width:900px){.cat{grid-template-columns:1fr 1fr;gap:10px 18px}}
+@media(max-width:600px){.cat{grid-template-columns:1fr}}
+.cat a{display:block;border-top:1px solid var(--line2);padding-top:18px;padding-bottom:28px}
+.cat .ci{display:flex;justify-content:space-between;margin-bottom:16px}
+.cat .cf{height:320px;margin-bottom:18px}
+.cat a:hover .cf img{transform:scale(1.06)}
+.cat h3{font-family:var(--display),sans-serif;font-weight:800;text-transform:uppercase;font-size:26px;line-height:1;margin-bottom:11px;letter-spacing:-.01em}
+.cat .spec{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin-bottom:13px}
+.cat p{font-size:14px;color:var(--ink2);max-width:34ch;font-weight:300}
+
+/* COMPARE */
+.compare{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line2);border-radius:var(--radius);overflow:hidden}
+.compare .col{padding:38px}
+.compare .col.us{background:var(--char);color:#EDE4D5}
+.compare .col h4{font-family:var(--display),sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;letter-spacing:-.01em;margin-bottom:6px}
+.compare .col.them h4{color:var(--ink2)}.compare .col.us h4{color:#fff}
+.compare .col .sl{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;display:block}
+.compare .row{display:flex;gap:12px;padding:14px 0;border-top:1px solid var(--line);font-size:15px;font-weight:300}
+.compare .col.us .row{border-top-color:rgba(237,228,213,.16);color:#D8CFBE}
+.compare .row i{font-style:normal;flex:0 0 auto;width:16px}
+.compare .col.them .row i{color:var(--muted)}.compare .col.us .row i{color:var(--accent)}
+@media(max-width:760px){.compare{grid-template-columns:1fr}}
+
+/* WORKS */
+.works{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:start}
+.worksfig{position:sticky;top:92px;height:78vh;min-height:500px}
+.worksfig .capveil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,27,20,0) 60%,rgba(33,27,20,.5));border-radius:var(--radius)}
+.worksfig .cap{position:absolute;left:18px;bottom:16px;z-index:2;color:#F4EEE2}
+.worklist{border-bottom:1px solid var(--line)}
+.workrow{display:grid;grid-template-columns:46px 1fr auto;gap:18px;align-items:baseline;padding:28px 4px;border-top:1px solid var(--line);cursor:pointer;transition:padding-left .3s,color .3s}
+.workrow:hover{padding-left:16px}
+.workrow .wx{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.workrow .wn{font-family:var(--display),sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(26px,3.4vw,46px);line-height:.96;letter-spacing:-.01em}
+.workrow .wm{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:right}
+.workrow:hover .wn{color:var(--accent)}
+.rowthumb{display:none}
+@media(max-width:860px){.works{grid-template-columns:1fr;gap:0}.worksfig{display:none}.workrow{grid-template-columns:1fr;gap:14px;padding:24px 0}.workrow .wm{text-align:left}.rowthumb{display:block;height:270px;grid-row:1}}
+
+.band{height:84vh;min-height:520px;overflow:hidden;border-radius:0}
+.band img{height:120%;margin-top:-10%;will-change:transform;filter:brightness(.98) contrast(1.02) saturate(1.04)}
+
+/* LOOKBOOK */
+.look{padding:128px 0;background:var(--char)}
+.look .h2{color:#F1EADC}.look .shead .m{color:#B8AE9C}
+.look .track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 var(--pad);margin-top:44px}
+.look .track::-webkit-scrollbar{display:none}
+.look .tile{flex:0 0 auto;width:min(540px,82vw);scroll-snap-align:start}
+.look .tile .tf{height:64vh;min-height:420px}
+.look .tile .lc{display:flex;justify-content:space-between;margin-top:13px}
+.look .lc .m{color:#9C9384}
+
+/* TRUST */
+.tlogos{display:flex;flex-wrap:wrap;gap:14px 38px;padding-bottom:40px;border-bottom:1px solid var(--line2);margin-bottom:44px}
+.tlogos span{font-family:var(--display),sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(15px,1.8vw,23px);color:var(--ink2);letter-spacing:-.01em}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media(max-width:820px){.tgrid{grid-template-columns:1fr;gap:20px}}
+.tq{font-size:18px;line-height:1.5;color:var(--ink);font-weight:300;border-left:2px solid var(--accent);padding-left:20px}
+.tq cite{display:block;margin-top:14px;font-family:var(--mono);font-style:normal;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* PROCESS */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:0 28px}
+.proc .p{border-top:2px solid var(--accent);padding-top:20px}
+.proc .px{font-family:var(--display),sans-serif;font-weight:800;font-size:26px;color:var(--accent)}
+.proc h3{font-family:var(--display),sans-serif;font-weight:800;text-transform:uppercase;font-size:23px;margin:12px 0 9px;letter-spacing:-.01em}
+.proc p{font-size:14px;color:var(--ink2);font-weight:300}
+@media(max-width:860px){.proc{grid-template-columns:1fr 1fr;gap:34px 24px}}
+@media(max-width:520px){.proc{grid-template-columns:1fr}}
+
+/* QUOTE */
+.quote blockquote{font-family:var(--display),sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(40px,8.5vw,128px);line-height:.92;letter-spacing:-.02em;max-width:15ch}
+.quote cite{display:block;margin-top:30px;font-family:var(--mono);font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* AREAS */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.split .frame{height:560px}
+.split p.body{font-size:16px;color:var(--ink2);max-width:48ch;font-weight:300}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.tags span{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line2);padding:8px 13px;border-radius:var(--r-sm)}
+@media(max-width:880px){.split{grid-template-columns:1fr;gap:30px}.split .frame{height:420px}}
+
+/* JOURNAL */
+.jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+@media(max-width:820px){.jgrid{grid-template-columns:1fr;gap:10px}}
+.jcard{border-top:1px solid var(--line2);padding-top:18px}
+.jcard .jf{height:250px;margin-bottom:16px}
+.jcard:hover .jf img{transform:scale(1.06)}
+.jcard h3{font-family:var(--display),sans-serif;font-weight:700;text-transform:uppercase;font-size:21px;line-height:1.05;margin-top:10px;letter-spacing:-.01em}
+
+/* FAQ */
+.faq{max-width:920px}
+.faq details{border-bottom:1px solid var(--line);padding:24px 0}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:18px;align-items:center;font-family:var(--display),sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(18px,2.1vw,27px);letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-family:var(--mono)}
+.faq details[open] summary::after{content:"\2013"}
+.faq p{font-size:15.5px;color:var(--ink2);margin-top:14px;max-width:74ch;font-weight:300}
+
+/* CTA */
+.cta{background:var(--char);color:#F1EADC;text-align:center}
+.cta .snum{color:var(--accent)}
+.cta .big{font-family:var(--display),sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(52px,12vw,180px);line-height:.9;letter-spacing:-.02em}
+.cta p{max-width:46ch;margin:26px auto 38px;color:#BBB1A0;font-size:16px;font-weight:300}
+.btn{display:inline-flex;align-items:center;gap:11px;background:var(--accent);color:#FBF6EC;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:18px 40px;border-radius:var(--r-sm);transition:.25s;border:1px solid var(--accent)}
+.btn:hover{background:transparent;color:#F4EEE2}
+.cta .ph{display:block;margin-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#938775}
+
+/* FOOTER */
+footer{background:var(--char);color:#BEB4A2;padding:40px 0 38px;overflow:hidden}
+.fmark{font-family:var(--display),sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(64px,16vw,250px);line-height:.82;color:#F1EADC;letter-spacing:-.03em;white-space:nowrap;margin:0 0 54px}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:52px}
+.fgrid p{font-size:14px;color:#9E9484;max-width:34ch;font-weight:300}
+.fcol h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#7A7060;margin-bottom:16px}
+.fcol a{display:block;font-size:14px;color:#BEB4A2;padding:6px 0}.fcol a:hover{color:#F1EADC}
+.fbot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:26px;border-top:1px solid rgba(241,234,220,.16)}
+.fbot span{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#7A7060}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}.fgrid .fb{grid-column:1/-1}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+
+/* CURSOR */
+.cursor{position:fixed;top:0;left:0;width:8px;height:8px;border-radius:50%;background:var(--accent);pointer-events:none;z-index:200;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;transition:width .25s,height .25s,background-color .25s}
+.cursor b{font-family:var(--mono);font-size:10px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:#FBF6EC;opacity:0;transition:opacity .2s}
+.cursor.big{width:92px;height:92px;background:rgba(33,27,20,.86)}.cursor.big b{opacity:1}
+body.cursoron,body.cursoron a{cursor:none}
+
+/* PLAYGROUND */
+.pg{position:fixed;right:16px;bottom:16px;z-index:150;background:var(--paper);border:1px solid var(--line2);border-radius:var(--radius);padding:14px 16px;width:248px;box-shadow:0 18px 50px -20px rgba(33,27,20,.5)}
+.pgh{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+.pgh button{background:none;border:0;font-size:16px;cursor:pointer;color:var(--ink);line-height:1}
+.pgb{margin-top:10px}.pg.min .pgb{display:none}
+.pgl{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:12px 0 7px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;border:1px solid var(--line2);background:transparent;color:var(--ink2);padding:6px 9px;border-radius:var(--r-sm);cursor:pointer;transition:.18s}
+.chips button:hover{border-color:var(--accent);color:var(--ink)}
+.chips button.on{background:var(--accent);border-color:var(--accent);color:#FBF6EC}
+.chips.dots button{width:22px;height:22px;padding:0;border-radius:50%;border:1px solid var(--line2)}
+.chips.dots button.on{outline:2px solid var(--ink);outline-offset:2px}
+@media(max-width:600px){.pg{right:10px;bottom:10px;width:208px}}
+
+/* SCROLL REVEAL */
+.js .shead,.js .intro-grid,.js .proof .pi,.js .division,.js .cat a,.js .compare,.js .workrow,.js .worksfig,.js .tlogos,.js .tq,.js .proc .p,.js .quote blockquote,.js .split>div,.js .split>.frame,.js .jcard,.js .look .tile,.js .faq,.js .cta .big,.js .fmark{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .in{opacity:1!important;transform:none!important}
+@media(prefers-reduced-motion:reduce){.js .shead,.js .intro-grid,.js .proof .pi,.js .division,.js .cat a,.js .compare,.js .workrow,.js .worksfig,.js .tlogos,.js .tq,.js .proc .p,.js .quote blockquote,.js .split>div,.js .split>.frame,.js .jcard,.js .look .tile,.js .faq,.js .cta .big,.js .fmark{opacity:1;transform:none}.hero>img,.band img{transform:none!important}}
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="progress" id="prog"></div>
+<div class="rail">Raw Surfaces &mdash; Surfaces Without Compromise</div>
+
+<header class="nav" id="nav"><div class="wrap">
+  <a class="brand" href="index-street.html">Raw Surfaces</a>
+  <nav class="links" id="links">
+    <a href="surfaces.html">Surfaces</a>
+    <a href="projects.html">Works</a>
+    <a href="blog.html">Journal</a>
+    <a href="about.html">Studio</a>
+    <a href="service-areas.html">Areas</a>
+    <a class="enq" href="contact.html">Enquire</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="assets/img/hero/hero-1.jpg" alt="Large-format polished concrete floor in an open-plan Melbourne home by Raw Surfaces">
+  <div class="scrim"></div>
+  <div class="corners">
+    <div class="tl"><span class="m">Floors &amp; Walls &#9670; Commercial &amp; Residential</span></div>
+    <div class="tr"><span class="m">38.36&deg;S / 145.00&deg;E<br>Mornington Peninsula &middot; VIC</span></div>
+  </div>
+  <div class="inner"><div class="wrap">
+    <h1>Surfaces<br>without <span class="it">compromise.</span></h1>
+    <div class="sub">
+      <p>Large-scale commercial concrete, grinding &amp; epoxy — and high-end residential polished concrete, microcement &amp; Venetian plaster. We do the floors and the walls, in full, across Melbourne &amp; the Mornington Peninsula.</p>
+      <a class="go" href="projects.html">Index of works &rarr;</a>
+    </div>
+  </div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marq"><div class="mrun">
+  <span>Concrete Grinding</span><i>&#9670;</i><span>Polished Concrete</span><i>&#9670;</i><span>Microcement</span><i>&#9670;</i><span>Venetian Plaster</span><i>&#9670;</i><span>Epoxy &amp; Resin</span><i>&#9670;</i>
+  <span>Concrete Grinding</span><i>&#9670;</i><span>Polished Concrete</span><i>&#9670;</i><span>Microcement</span><i>&#9670;</i><span>Venetian Plaster</span><i>&#9670;</i><span>Epoxy &amp; Resin</span><i>&#9670;</i>
+</div></div>
+
+<!-- PROOF BAR -->
+<div class="proof"><div class="wrap">
+  <div class="pi"><div class="pn">14+ Years</div><div class="pl">Owner-led, on the tools</div></div>
+  <div class="pi"><div class="pn">Floors &amp; Walls</div><div class="pl">Done in full, at scale</div></div>
+  <div class="pi"><div class="pn">Commercial &amp; Residential</div><div class="pl">Melbourne &middot; Peninsula &middot; VIC</div></div>
+  <div class="pi"><div class="pn">Accredited</div><div class="pl">Xbond &middot; Calce &middot; Husqvarna</div></div>
+</div></div>
+
+<!-- INTRO -->
+<section><div class="wrap">
+  <span class="snum">01 / The studio</span>
+  <div class="intro-grid">
+    <h2 class="lead-serif">A floors &amp; walls studio, built for <span class="it">scale and craft.</span></h2>
+    <div class="body">
+      <p>Raw Surfaces works at two ends of the same trade. For builders and developers, we grind, prepare and coat large commercial and industrial floors. For architects, designers and homeowners, we lay polished concrete, microcement and Venetian plaster through entire homes — floors and walls.</p>
+      <p>What we don&rsquo;t do is small, disconnected jobs. We take on whole surfaces and whole projects, and every one is led personally by Brayden Warhurst — no outsourcing, no underskilled crews.</p>
+      <a class="arrow" href="about.html">More about the studio &rarr;</a>
+    </div>
+  </div>
+</div></section>
+
+<!-- DIVISIONS -->
+<section class="soft"><div class="wrap">
+  <div class="shead"><h2 class="h2">Two <span class="it">divisions</span></h2><span class="m">02 / What we do</span></div>
+
+  <div class="division">
+    <div class="dtext">
+      <span class="tag">&#9670; Commercial &amp; Industrial</span>
+      <h3>Concrete grinding, prep &amp; epoxy — at scale</h3>
+      <p>Large-format polished concrete, concrete grinding, surface preparation and epoxy/resin systems for warehouses, retail, hospitality and industrial floors. The scale work builders and developers call us for.</p>
+      <ul class="ulist"><li>Concrete grinding</li><li>Surface preparation</li><li>Epoxy &amp; resin floors</li><li>Large-format polished concrete</li><li>Grind &amp; seal</li></ul>
+      <a class="arrow" href="concrete-grinding-sealing.html">Commercial capability &rarr;</a>
+    </div>
+    <div class="frame"><img src="assets/img/parker-coburg/parker-coburg-1.jpg" alt="Large-scale commercial concrete grinding and preparation"></div>
+  </div>
+
+  <div class="division flip">
+    <div class="dtext">
+      <span class="tag">&#9670; High-End Residential</span>
+      <h3>Whole-home floors &amp; walls</h3>
+      <p>Polished concrete, microcement and Venetian plaster — designed and laid by hand through entire homes. Seamless floors and feature-scale walls for architects, designers and discerning homeowners.</p>
+      <ul class="ulist"><li>Polished concrete floors</li><li>Microcement floors &amp; walls</li><li>Venetian plaster walls</li><li>Whole-home scope</li><li>Design-led</li></ul>
+      <a class="arrow" href="surfaces.html">Residential consultation &rarr;</a>
+    </div>
+    <div class="frame"><img src="assets/img/hinkler-house/hinkler-house-2.jpg" alt="High-end residential polished concrete floors through a Melbourne home"></div>
+  </div>
+</div></section>
+
+<!-- SURFACES -->
+<section><div class="wrap">
+  <div class="shead"><h2 class="h2">Surfaces</h2><span class="m">03 / Floors &amp; walls</span></div>
+  <div class="cat">
+    <a href="polished-concrete.html"><div class="ci"><span class="m">01</span><span class="m">Floors</span></div><div class="cf frame"><img src="assets/img/hinkler-house/hinkler-house-1.jpg" alt="Polished concrete floor"></div><h3>Polished Concrete</h3><div class="spec">Floors &middot; Residential &amp; Commercial</div><p>Large-format commercial floors and seamless high-end home floors. Grind, hone, polish.</p></a>
+    <a href="microcement.html"><div class="ci"><span class="m">02</span><span class="m">Floors &amp; Walls</span></div><div class="cf frame"><img src="assets/img/bo-collins-street/bo-collins-street-1.jpg" alt="Microcement floors and walls"></div><h3>Microcement</h3><div class="spec">Floors &amp; Walls &middot; Residential</div><p>Seamless microcement across whole homes — floors and walls, no tiles, no grout.</p></a>
+    <a href="venetian-plaster.html"><div class="ci"><span class="m">03</span><span class="m">Walls</span></div><div class="cf frame"><img src="assets/img/tha-bathroom/tha-bathroom-1.jpg" alt="Venetian plaster walls"></div><h3>Venetian Plaster</h3><div class="spec">Walls &middot; Residential</div><p>Hand-burnished Italian lime plaster, room after room. Depth, movement, warmth.</p></a>
+    <a href="concrete-grinding-sealing.html"><div class="ci"><span class="m">04</span><span class="m">Prep</span></div><div class="cf frame"><img src="assets/img/parker-coburg/parker-coburg-1.jpg" alt="Concrete grinding and surface preparation"></div><h3>Grinding &amp; Prep</h3><div class="spec">Floors &middot; Commercial</div><p>Large-scale concrete grinding, surface preparation and grind &amp; seal for builders.</p></a>
+    <a href="epoxy-coatings.html"><div class="ci"><span class="m">05</span><span class="m">Commercial</span></div><div class="cf frame"><img src="assets/img/parker-grind-seal/parker-grind-seal-1.jpg" alt="Epoxy and resin commercial floor coating"></div><h3>Epoxy &amp; Resin</h3><div class="spec">Floors &middot; Commercial &amp; Industrial</div><p>Hard-wearing epoxy and resin systems for commercial and industrial floors at scale.</p></a>
+    <a href="surfaces.html"><div class="ci"><span class="m">06</span><span class="m">Whole project</span></div><div class="cf frame"><img src="assets/img/tux-lux/tux-lux-1.jpg" alt="Architectural surfaces by Raw Surfaces"></div><h3>The whole lot</h3><div class="spec">Floors &amp; Walls &middot; Full scope</div><p>We take on all the floors and walls. Tell us the scope and we&rsquo;ll plan the lot.</p></a>
+  </div>
+</div></section>
+
+<!-- BREAK THE STANDARD -->
+<section class="soft"><div class="wrap">
+  <div class="shead"><h2 class="h2">Breaking the <span class="it">standard</span></h2><span class="m">04 / Why we&rsquo;re different</span></div>
+  <div class="compare">
+    <div class="col them">
+      <h4>The industry standard</h4>
+      <span class="sl">What you usually get</span>
+      <div class="row"><i>&#10005;</i><span>Work outsourced to subcontractors</span></div>
+      <div class="row"><i>&#10005;</i><span>Vague quotes, surprise variations</span></div>
+      <div class="row"><i>&#10005;</i><span>One trade, no design input</span></div>
+      <div class="row"><i>&#10005;</i><span>Small jobs, rushed finishes</span></div>
+      <div class="row"><i>&#10005;</i><span>You chase them for updates</span></div>
+    </div>
+    <div class="col us">
+      <h4>The Raw Surfaces way</h4>
+      <span class="sl">What we do instead</span>
+      <div class="row"><i>&#10003;</i><span>Owner on the tools, every project</span></div>
+      <div class="row"><i>&#10003;</i><span>Fixed, transparent quotes</span></div>
+      <div class="row"><i>&#10003;</i><span>Design-led — we plan the whole surface</span></div>
+      <div class="row"><i>&#10003;</i><span>Whole floors &amp; walls, finished properly</span></div>
+      <div class="row"><i>&#10003;</i><span>Clear communication, start to finish</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- WORKS -->
+<section><div class="wrap">
+  <div class="shead"><h2 class="h2">Selected <span class="it">works</span></h2><span class="m">05 / Index — hover to preview</span></div>
+  <div class="works">
+    <div class="worklist" id="worklist">
+      <a class="workrow" href="project-bo-collins-street.html" data-img="assets/img/bo-collins-street/bo-collins-street-3.jpg" data-cap="B&amp;O Collins Street — Commercial Microcement / Melbourne"><span class="wx">01</span><span class="wn">B&amp;O Collins Street</span><span class="wm">Commercial / Microcement<br>Melbourne</span><div class="rowthumb frame"><img src="assets/img/bo-collins-street/bo-collins-street-3.jpg" alt="B&amp;O Collins Street"></div></a>
+      <a class="workrow" href="project-hinkler-house.html" data-img="assets/img/hinkler-house/hinkler-house-3.jpg" data-cap="Hinkler House — Residential Polished Concrete / Mount Martha"><span class="wx">02</span><span class="wn">Hinkler House</span><span class="wm">Residential / Polished Concrete<br>Mount Martha</span><div class="rowthumb frame"><img src="assets/img/hinkler-house/hinkler-house-3.jpg" alt="Hinkler House"></div></a>
+      <a class="workrow" href="project-tux-lux.html" data-img="assets/img/tux-lux/tux-lux-3.jpg" data-cap="Tux Lux — Polished Concrete / Fleetwood"><span class="wx">03</span><span class="wn">Tux Lux</span><span class="wm">Polished Concrete<br>Fleetwood</span><div class="rowthumb frame"><img src="assets/img/tux-lux/tux-lux-3.jpg" alt="Tux Lux"></div></a>
+      <a class="workrow" href="project-cosh-living-geelong.html" data-img="assets/img/cosh-living-geelong/cosh-living-geelong-2.jpg" data-cap="Cosh Living — Commercial / Geelong"><span class="wx">04</span><span class="wn">Cosh Living</span><span class="wm">Commercial / Retail<br>Geelong</span><div class="rowthumb frame"><img src="assets/img/cosh-living-geelong/cosh-living-geelong-2.jpg" alt="Cosh Living Geelong"></div></a>
+      <a class="workrow" href="project-belura-hill.html" data-img="assets/img/belura-hill/belura-hill-2.jpg" data-cap="Belura Hill — Residential Polished Concrete / Melbourne"><span class="wx">05</span><span class="wn">Belura Hill</span><span class="wm">Residential / Polished Concrete<br>Melbourne</span><div class="rowthumb frame"><img src="assets/img/belura-hill/belura-hill-2.jpg" alt="Belura Hill"></div></a>
+      <a class="workrow" href="project-tha-bathroom.html" data-img="assets/img/tha-bathroom/tha-bathroom-3.jpg" data-cap="THA — Microcement / Designed by Dutton"><span class="wx">06</span><span class="wn">THA Residence</span><span class="wm">Residential / Microcement<br>by Dutton</span><div class="rowthumb frame"><img src="assets/img/tha-bathroom/tha-bathroom-3.jpg" alt="THA Residence"></div></a>
+    </div>
+    <div class="worksfig frame" id="worksfig">
+      <img id="worksimg" src="assets/img/bo-collins-street/bo-collins-street-3.jpg" alt="Selected work preview">
+      <div class="capveil"></div>
+      <span class="cap m" id="workscap">B&amp;O Collins Street — Commercial Microcement / Melbourne</span>
+    </div>
+  </div>
+  <div style="margin-top:52px"><a class="arrow" href="projects.html">View the full index &rarr;</a></div>
+</div></section>
+
+<!-- BAND -->
+<div class="band"><img src="assets/img/belura-hill/belura-hill-1.jpg" alt="Seamless polished concrete flowing through a Melbourne home"></div>
+
+<!-- LOOKBOOK -->
+<section class="look"><div class="wrap"><div class="shead"><h2 class="h2">In <span class="it">situ</span></h2><span class="m">06 / Selected frames &rarr; scroll</span></div></div>
+  <div class="track">
+    <div class="tile"><div class="tf frame"><img src="assets/img/hinkler-house/hinkler-house-5.jpg" alt="Hinkler House detail"></div><div class="lc"><span class="m">Hinkler House</span><span class="m">Mt Martha</span></div></div>
+    <div class="tile"><div class="tf frame"><img src="assets/img/bo-collins-street/bo-collins-street-4.jpg" alt="B&amp;O Collins Street detail"></div><div class="lc"><span class="m">B&amp;O Collins St</span><span class="m">Melbourne</span></div></div>
+    <div class="tile"><div class="tf frame"><img src="assets/img/tux-lux/tux-lux-4.jpg" alt="Tux Lux detail"></div><div class="lc"><span class="m">Tux Lux</span><span class="m">Polished Concrete</span></div></div>
+    <div class="tile"><div class="tf frame"><img src="assets/img/belura-hill/belura-hill-3.jpg" alt="Belura Hill detail"></div><div class="lc"><span class="m">Belura Hill</span><span class="m">Melbourne</span></div></div>
+    <div class="tile"><div class="tf frame"><img src="assets/img/cosh-living-geelong/cosh-living-geelong-3.jpg" alt="Cosh Living detail"></div><div class="lc"><span class="m">Cosh Living</span><span class="m">Geelong</span></div></div>
+    <div class="tile"><div class="tf frame"><img src="assets/img/tha-bathroom/tha-bathroom-5.jpg" alt="THA detail"></div><div class="lc"><span class="m">THA Residence</span><span class="m">Microcement</span></div></div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section><div class="wrap">
+  <div class="shead"><h2 class="h2">Trusted by builders <span class="it">&amp; designers</span></h2><span class="m">07 / Trust</span></div>
+  <div class="tlogos">
+    <span>B&amp;O Collins Street</span><span>Designed by Dutton</span><span>Cosh Living</span><span>Parker Building</span><span>Vivid Construction</span>
+  </div>
+  <div class="tgrid">
+    <blockquote class="tq">&ldquo;{Paste a real Google review here}&rdquo;<cite>Client &middot; Project &middot; Suburb</cite></blockquote>
+    <blockquote class="tq">&ldquo;{Paste a real builder/designer review here}&rdquo;<cite>Builder &middot; Commercial project</cite></blockquote>
+    <blockquote class="tq">&ldquo;{Paste a real homeowner review here}&rdquo;<cite>Homeowner &middot; Whole-home</cite></blockquote>
+  </div>
+</div></section>
+
+<!-- PROCESS -->
+<section class="soft"><div class="wrap">
+  <div class="shead"><h2 class="h2">Design <span class="it">&amp; create</span></h2><span class="m">08 / How we work</span></div>
+  <div class="proc">
+    <div class="p"><div class="px">01</div><h3>Talk</h3><p>We listen first — the scope, the budget, how the space gets used.</p></div>
+    <div class="p"><div class="px">02</div><h3>Plan</h3><p>We design the right surfaces and map exactly how your project runs.</p></div>
+    <div class="p"><div class="px">03</div><h3>Create</h3><p>Brayden leads every project personally. No outsourcing, no hand-offs.</p></div>
+    <div class="p"><div class="px">04</div><h3>Hand over</h3><p>Finished floors and walls that do what we promised — ready to live or trade in.</p></div>
+  </div>
+</div></section>
+
+<!-- QUOTE -->
+<section class="quote"><div class="wrap">
+  <blockquote class="disp">Quality is our <span class="it">only</span> priority.</blockquote>
+  <cite>Brayden Warhurst — Founder, Raw Surfaces</cite>
+</div></section>
+
+<!-- AREAS -->
+<section class="soft"><div class="wrap"><div class="split">
+  <div>
+    <span class="snum">09 / Where we work</span>
+    <h2 class="h2" style="margin-bottom:24px">Melbourne <span class="it">&amp; the Peninsula</span></h2>
+    <p class="body">Commercial floors across Melbourne, Geelong and wider Victoria; high-end residential across the bayside suburbs and the Mornington Peninsula. We travel for the right project — consultations booked to suit your site.</p>
+    <div class="tags"><span>Mornington</span><span>Mt Eliza</span><span>Mt Martha</span><span>Sorrento</span><span>Red Hill</span><span>Bayside</span><span>Melbourne</span><span>Geelong</span></div>
+    <p style="margin-top:30px"><a class="arrow" href="service-areas.html">See all service areas &rarr;</a></p>
+  </div>
+  <div class="frame arch"><img src="assets/img/cosh-living-geelong/cosh-living-geelong-1.jpg" alt="Raw Surfaces commercial project in Geelong"></div>
+</div></div></section>
+
+<!-- JOURNAL -->
+<section><div class="wrap">
+  <div class="shead"><h2 class="h2">Journal</h2><span class="m">10 / Notes &amp; guides</span></div>
+  <div class="jgrid">
+    <a class="jcard" href="post-microcement-vs-tiles-bathroom.html"><div class="jf frame"><img src="assets/img/tha-bathroom/tha-bathroom-4.jpg" alt="Microcement vs tiles"></div><span class="m">Guide</span><h3>Microcement vs tiles, explained</h3></a>
+    <a class="jcard" href="post-polished-concrete-cost-melbourne.html"><div class="jf frame"><img src="assets/img/hinkler-house/hinkler-house-4.jpg" alt="Polished concrete cost Melbourne"></div><span class="m">Costs</span><h3>What polished concrete costs in Melbourne</h3></a>
+    <a class="jcard" href="post-polished-concrete-mornington-peninsula.html"><div class="jf frame"><img src="assets/img/belura-hill/belura-hill-4.jpg" alt="Polished concrete Mornington Peninsula"></div><span class="m">Local</span><h3>Polished concrete on the Peninsula</h3></a>
+  </div>
+</div></section>
+
+<!-- FAQ -->
+<section class="soft"><div class="wrap">
+  <div class="shead"><h2 class="h2">Good to <span class="it">know</span></h2><span class="m">11 / FAQ</span></div>
+  <div class="faq">
+    <details open><summary>Do you do commercial and industrial work?</summary><p>Yes — large-scale concrete grinding, surface preparation, epoxy/resin systems and large-format polished concrete for warehouses, retail, hospitality and industrial floors. Builders and developers across Melbourne, Geelong and Victoria are a core part of our work.</p></details>
+    <details><summary>Do you take small jobs?</summary><p>We focus on whole floors and walls and larger-scale projects rather than one-off small jobs. We&rsquo;ll happily handle surface prep, a benchtop or a feature element when it&rsquo;s part of a project we&rsquo;re already doing, or when the scale is right.</p></details>
+    <details><summary>Do you do whole homes?</summary><p>Yes. For high-end residential we lay polished concrete, microcement and Venetian plaster across all the floors and walls — designed and delivered as one cohesive project.</p></details>
+    <details><summary>Who does the work, and how do I get a quote?</summary><p>Every project is led personally by Brayden Warhurst, the owner, with 14+ years on the tools — never outsourced. Book a consultation for a fixed, transparent quote: call 0468 934 409 or email brayden@rawsurfaces.com.au.</p></details>
+  </div>
+</div></section>
+
+<!-- CTA -->
+<section class="cta"><div class="wrap">
+  <span class="snum">12 / Start here</span>
+  <div class="big disp">Start your <span class="it">project.</span></div>
+  <p>Commercial floor at scale, or a whole-home finish — tell us the scope and we&rsquo;ll plan the right surfaces and a fixed quote. Led personally by Brayden Warhurst.</p>
+  <a class="btn" href="contact.html">Book a consultation</a>
+  <a class="ph" href="tel:+61468934409">0468 934 409 &middot; brayden@rawsurfaces.com.au</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fmark disp">Raw Surfaces</div>
+  <div class="fgrid">
+    <div class="fb"><p>Commercial concrete and high-end residential floors and walls across Melbourne and the Mornington Peninsula. Polished concrete, microcement, Venetian plaster, epoxy and concrete grinding — led personally by Brayden Warhurst. Surfaces without compromise.</p></div>
+    <div class="fcol"><h4>Surfaces</h4>
+      <a href="polished-concrete.html">Polished Concrete</a>
+      <a href="microcement.html">Microcement</a>
+      <a href="venetian-plaster.html">Venetian Plaster</a>
+      <a href="epoxy-coatings.html">Epoxy &amp; Resin</a>
+      <a href="concrete-grinding-sealing.html">Grinding &amp; Prep</a>
+    </div>
+    <div class="fcol"><h4>Studio</h4>
+      <a href="about.html">About</a>
+      <a href="projects.html">Works</a>
+      <a href="service-areas.html">Service Areas</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="fcol"><h4>Contact</h4>
+      <a href="tel:+61468934409">0468 934 409</a>
+      <a href="mailto:brayden@rawsurfaces.com.au">brayden@rawsurfaces.com.au</a>
+      <a href="https://www.instagram.com/raw_surfaces" rel="noopener">Instagram</a>
+      <a href="https://www.pinterest.com.au/Raw_surfaces/" rel="noopener">Pinterest</a>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>&copy; <span data-year></span> Raw Surfaces Pty Ltd</span>
+    <span>Mornington Peninsula &amp; Melbourne, VIC</span>
+  </div>
+</div></footer>
+
+<!-- PLAYGROUND (won't ship) -->
+<div class="pg" id="pg">
+  <div class="pgh"><span>Type playground</span><button id="pgt" aria-label="Toggle">&ndash;</button></div>
+  <div class="pgb">
+    <div class="pgl">Headline font</div>
+    <div class="chips" data-target="--display">
+      <button data-v='"Archivo"' class="on">Archivo</button>
+      <button data-v='"Anton"'>Anton</button>
+      <button data-v='"Bricolage Grotesque"'>Bricolage</button>
+      <button data-v='"Space Grotesk"'>Space Grotesk</button>
+      <button data-v='"Big Shoulders Display"'>Big Shoulders</button>
+      <button data-v='"Syne"'>Syne</button>
+      <button data-v='"Fraunces"'>Fraunces</button>
+      <button data-v='"Instrument Serif"'>Instrument</button>
+    </div>
+    <div class="pgl">Body font</div>
+    <div class="chips" data-target="--body">
+      <button data-v='"Inter"' class="on">Inter</button>
+      <button data-v='"Hanken Grotesk"'>Hanken</button>
+      <button data-v='"Archivo"'>Archivo</button>
+    </div>
+    <div class="pgl">Accent</div>
+    <div class="chips dots" data-target="--accent">
+      <button data-v="#5C5E3C" class="on" style="background:#5C5E3C" aria-label="Olive"></button>
+      <button data-v="#3F5244" style="background:#3F5244" aria-label="Bottle green"></button>
+      <button data-v="#5B6E73" style="background:#5B6E73" aria-label="Slate"></button>
+      <button data-v="#6F2C2C" style="background:#6F2C2C" aria-label="Oxblood"></button>
+      <button data-v="#7C6F58" style="background:#7C6F58" aria-label="Taupe"></button>
+      <button data-v="#2A2420" style="background:#2A2420" aria-label="Charcoal"></button>
+    </div>
+  </div>
+</div>
+
+<script type="application/ld+json">
+{ "@context":"https://schema.org","@graph":[
+{"@type":"GeneralContractor","@id":"https://www.rawsurfaces.com.au/#business","name":"Raw Surfaces","alternateName":"Raw Surfaces Pty Ltd","url":"https://www.rawsurfaces.com.au","telephone":"+61468934409","email":"brayden@rawsurfaces.com.au","image":"https://www.rawsurfaces.com.au/assets/img/hero/hero-1.jpg","priceRange":"$$","slogan":"Surfaces Without Compromise","founder":{"@type":"Person","name":"Brayden Warhurst"},"areaServed":["Melbourne","Mornington Peninsula","Geelong","Victoria"],"address":{"@type":"PostalAddress","addressRegion":"VIC","addressCountry":"AU"},"sameAs":["https://www.instagram.com/raw_surfaces","https://www.pinterest.com.au/Raw_surfaces/","https://www.facebook.com/raw_surfaces"],"knowsAbout":["Commercial concrete grinding","Surface preparation","Epoxy and resin flooring","Polished concrete","Microcement","Venetian plaster"]},
+{"@type":"WebSite","@id":"https://www.rawsurfaces.com.au/#website","url":"https://www.rawsurfaces.com.au","name":"Raw Surfaces","publisher":{"@id":"https://www.rawsurfaces.com.au/#business"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Do you do commercial and industrial work?","acceptedAnswer":{"@type":"Answer","text":"Yes. Raw Surfaces provides large-scale concrete grinding, surface preparation, epoxy and resin systems and large-format polished concrete for commercial and industrial floors across Melbourne, Geelong and Victoria, working with builders and developers."}},
+{"@type":"Question","name":"Do you do whole homes?","acceptedAnswer":{"@type":"Answer","text":"Yes. For high-end residential projects Raw Surfaces lays polished concrete, microcement and Venetian plaster across all the floors and walls as one cohesive project."}},
+{"@type":"Question","name":"Who does the work?","acceptedAnswer":{"@type":"Answer","text":"Every project is led and carried out personally by owner Brayden Warhurst, with 14+ years of experience. Work is never outsourced or handed to underskilled staff."}},
+{"@type":"Question","name":"How do I get a quote?","acceptedAnswer":{"@type":"Answer","text":"Book a consultation for a fixed, transparent quote. Call 0468 934 409 or email brayden@rawsurfaces.com.au."}}
+]}
+]}
+</script>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  function onScroll(){if(window.scrollY>window.innerHeight-90){nav.classList.add('scrolled')}else{nav.classList.remove('scrolled')}}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var burger=document.getElementById('burger'),links=document.getElementById('links');
+  burger.addEventListener('click',function(){links.classList.toggle('open')});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open')})});
+  var img=document.getElementById('worksimg'),cap=document.getElementById('workscap');
+  document.querySelectorAll('#worklist .workrow').forEach(function(r){
+    r.addEventListener('mouseenter',function(){var s=r.getAttribute('data-img');if(s&&img)img.src=s;var c=r.getAttribute('data-cap');if(c&&cap)cap.textContent=c});
+  });
+  var y=document.querySelector('[data-year]');if(y)y.textContent=new Date().getFullYear();
+  var rv=document.querySelectorAll('.shead,.intro-grid,.proof .pi,.division,.cat a,.compare,.workrow,.worksfig,.tlogos,.tq,.proc .p,.quote blockquote,.split>div,.split>.frame,.jcard,.look .tile,.faq,.cta .big,.fmark');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.12});
+    rv.forEach(function(el){io.observe(el)});
+    setTimeout(function(){rv.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight)el.classList.add('in')})},80);
+    window.addEventListener('load',function(){setTimeout(function(){rv.forEach(function(el){el.classList.add('in')})},2400)});
+  }
+  var heroimg=document.querySelector('.hero>img'),bandimg=document.querySelector('.band img'),prog=document.getElementById('prog');
+  function sc(){var sy=window.scrollY||window.pageYOffset||0;
+    if(prog){var h=document.documentElement.scrollHeight-window.innerHeight;prog.style.width=(h>0?Math.min(100,sy/h*100):0)+'%';}
+    if(heroimg){heroimg.style.transform='translate3d(0,'+(sy*0.08)+'px,0)';}
+    if(bandimg){var b=bandimg.getBoundingClientRect();var off=(b.top+b.height/2-window.innerHeight/2)/window.innerHeight;bandimg.style.transform='translate3d(0,'+(off*-36)+'px,0)';}
+  }
+  window.addEventListener('scroll',sc,{passive:true});window.addEventListener('resize',sc);sc();
+  document.querySelectorAll('.pg .chips').forEach(function(group){
+    var target=group.getAttribute('data-target');
+    group.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click',function(){document.documentElement.style.setProperty(target,b.getAttribute('data-v'));group.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on')});
+    });
+  });
+  document.getElementById('pgt').addEventListener('click',function(){var p=document.getElementById('pg');p.classList.toggle('min');this.textContent=p.classList.contains('min')?'+':'–'});
+  if(window.matchMedia&&window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+    var cur=document.createElement('div');cur.className='cursor';cur.innerHTML='<b>View</b>';document.body.appendChild(cur);document.body.classList.add('cursoron');
+    window.addEventListener('mousemove',function(e){cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px'},{passive:true});
+    document.querySelectorAll('.workrow,.look .tile,.cat a,.jcard,.division .frame').forEach(function(el){
+      el.addEventListener('mouseenter',function(){cur.classList.add('big')});
+      el.addEventListener('mouseleave',function(){cur.classList.remove('big')});
+    });
+  }
+})();
+</script>
+</body>
+</html>
